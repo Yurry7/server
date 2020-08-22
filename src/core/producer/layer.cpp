@@ -53,6 +53,7 @@ struct layer::impl
         if (auto_play_ && foreground_ == frame_producer::empty()) {
             play();
         } else if (preview) {
+            background_->leading_producer(foreground_);
             foreground_ = std::move(background_);
             background_ = frame_producer::empty();
             paused_     = true;
