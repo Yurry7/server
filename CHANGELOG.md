@@ -1,3 +1,7 @@
+CasparCG 2.3.1
+==========================================
+* changed LOAD function (F3) for clean loading, without black fields.
+
 CasparCG 2.3.0 Stable
 ==========================================
 
